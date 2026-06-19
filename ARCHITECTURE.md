@@ -229,7 +229,16 @@ cd frontend && npm run dev  # React dev server
 - app/services/openai.py — GPT-4o structured output via client.beta.chat.completions.parse(),
   InterviewScorecard Pydantic model, 7 categories
 
-### Frontend — IN PROGRESS 🔄
+### Frontend — DONE ✅
+- React + Vite + TypeScript + Mantine v9 + TanStack Query
+- UploadScreen — Mantine Dropzone, file preview, upload loading state
+- ProcessingScreen — TanStack Query polling every 3s, status text per state
+- ReportScreen — 7 ScoreCards (2-col grid), AcousticMetrics (4 stat cards),
+  strengths/priorities columns, summary card
+- ScoreCard — badge + progress bar colored by score (<2.5 red, 2.5–3.5 yellow, >3.5 green)
+- AcousticMetrics — duration mm:ss, tempo BPM, pitch Hz, pause %
+- State machine: upload → processing → report, "Новий аналіз" resets to upload
+
 ### Deployment — TODO 🔲
 
 ---
