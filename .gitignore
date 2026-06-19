@@ -1,0 +1,59 @@
+# ── Environment ───────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+# .env.example is intentionally kept
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+dist/
+.next/
+.nuxt/
+.output/
+
+# ── Docker volumes ────────────────────────────────────────────────────────────
+postgres_data/
+redis_data/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Testing / Coverage ────────────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# ── Audio / Temp files ────────────────────────────────────────────────────────
+/tmp/interview-coach/
+*.mp3
+*.wav
+*.m4a
+*.ogg
+*.webm
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
